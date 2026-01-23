@@ -13,7 +13,7 @@
     <form>
         <!--Campo de Texto-->
         <label for="nome">Nome</label>
-        <input type="text" id="Nome" name="nome" required>
+        <input type="text" id="Nome" name="nome" placeholder="Ex: Vinicius">
         <br><br>
 
         <!--Campo de Email-->
@@ -54,11 +54,27 @@
         <input type="file" name="document" id="document">
         <br><br>
 
+        <!--Campo de caixa de seleção-->
+        <label for="situacao">Situação Atual</label>
+        <select name="situation" id="situacao">
+            <option value="" selected disabled>Selecione uma das opções...</option>
+            <option value="estudante">Estudando para ser um programador</option>
+            <option value="estagiario">Atuando como estagiário/trainee</option>
+            <option value="junior">Atuando como desenvolvedor júnior</option>
+            <option value="pleno">Atuando como desenvolvedor pleno</option>
+            <option value="senior">Atuando como desenvolvedor sênior</option>
+        </select>
+        <br><br>
+
+        <!--Campo de área de texto de múltiplas linhas-->
+        <label for="sobre">Sobre Mim:</label>
+        <textarea name="sobre" id="sobre" cols="40" rows="6" placeholder="Fale um pouco sobre você..."></textarea>
+
         <button type="submit">Enviar</button>
 
 
-
     </form>
+
 </body>
 
 </html>
